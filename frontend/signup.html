@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+
+    <header class="teal darken-1">
+        <div class="container">
+            <nav class="transparent boxShadow0">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="brand-logo">Accounts</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="signup.html">Sign up</a></li>
+                        <li><a href="login.html">Log in</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="signup.html">Sign up</a></li>
+                <li><a href="login.html">Log in</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="outerBox">
+            <div class="row">
+                <div class="container">
+                    <div class="col hide-on-small-only m2"></div>
+                    <div class="col s12 m8">
+                        <div class="innerBox padding20 white grey-text text-darken-3 center-align">
+                            <h4 class="margin0">Create Account</h4>
+                            <p>It's free and hardly takes more than 30 seconds.</p>
+
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="fullName" name="fullName" type="text">
+                                    <label for="fullName">Full Name</label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">email</i>
+                                    <input id="email" name="email" type="email" validate>
+                                    <label for="email">Email Address</label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">security</i>
+                                    <input id="password" name="password" type="password">
+                                    <label for="password">Password</label>
+                                </div>
+                            </div>
+
+                            <button id="signup" onclick="signup()" class="btn teal darken-1 waves-effect waves-light hoverable capitalize strong"
+                                style="width: 100%;">sign up</button>
+
+                            <p>By clicking the Sign Up button, you are agree to our
+                                <a href="#modal1" class="modal-trigger">Terms &amp; Conditions</a> &
+                                <a href="#modal2" class="modal-trigger">Privacy Policy</a>
+                            </p>
+
+                            <!-- Modal Structure for Terms & Conditions -->
+                            <div id="modal1" class="modal">
+                                <div class="modal-content left-align">
+                                    <h4>Terms &amp; Conditions</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis minima
+                                        praesentium error minus esse soluta tempore provident voluptatum perspiciatis
+                                        reprehenderit ullam, nisi iusto dicta iure fuga officia beatae assumenda velit.
+                                        Perspiciatis temporibus, tempora vero ut molestiae veniam veritatis eveniet qui
+                                        numquam nostrum porro soluta commodi? Maxime vitae tenetur nesciunt vel magni
+                                        a, officia asperiores. Inventore explicabo placeat tempore quisquam
+                                        voluptatibus?
+                                        Inventore porro necessitatibus eius a eligendi, laudantium quos minima aperiam
+                                        velit provident illo ratione atque recusandae non est cum dolores saepe,
+                                        dolorem iure possimus. Quia, sapiente dolorum? Praesentium, sint repellendus.
+                                        Harum obcaecati repudiandae debitis earum expedita corporis in, quo provident
+                                        pariatur deserunt tempora blanditiis rerum, dignissimos sint saepe, ex quae.
+                                        Rem doloremque enim placeat ab quidem quas, nam aspernatur accusamus!
+                                        Consequuntur obcaecati facere similique quia vel ipsum minus, quibusdam,
+                                        tenetur eligendi reprehenderit odio. Maiores voluptatem eos natus reiciendis
+                                        quas dolore non sint. Minima enim assumenda amet, cumque similique itaque
+                                        dignissimos!
+                                        Qui reprehenderit modi numquam quaerat magnam dicta in nam recusandae,
+                                        temporibus optio doloribus blanditiis? Optio unde quo maxime dolore magni
+                                        laboriosam iusto, tempore consectetur tempora rerum aspernatur dolores qui
+                                        incidunt?
+                                        Alias tenetur recusandae illo earum id blanditiis fugit ducimus odit, minima
+                                        deserunt veritatis necessitatibus provident eos, est molestias voluptates
+                                        accusamus ex nobis quia dicta aliquid! Excepturi temporibus vero corrupti
+                                        dolor!
+                                        Distinctio corporis dicta, animi nostrum facilis ipsam rem hic voluptate aut
+                                        eligendi, est quisquam ea. Eveniet velit, eius labore debitis veritatis nostrum
+                                        dolorum eaque sequi quas doloremque repellat nulla ducimus?
+                                        Dolore maiores consequatur omnis, sequi quaerat, vero eaque in voluptatibus,
+                                        sunt impedit facere! Cumque cupiditate accusantium quidem, vitae, amet error
+                                        corporis hic veritatis illum veniam odit quaerat velit expedita id.
+                                        Corrupti consequatur dolorem architecto temporibus neque, autem magnam sunt,
+                                        dolore excepturi voluptas vitae quod mollitia reprehenderit fugiat saepe nemo
+                                        quibusdam magni similique error soluta dolorum vel dignissimos modi.
+                                        Recusandae, iusto?
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#!" class="modal-close btn teal darken-1 waves-effect waves-light hoverable capitalize">Agree</a>
+                                </div>
+                            </div>
+
+                            <!-- Modal Structure for Privacy Policy -->
+                            <div id="modal2" class="modal">
+                                <div class="modal-content left-align">
+                                    <h4>Privacy Policy</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi accusantium
+                                        voluptatibus minus laudantium corrupti fugiat delectus, veniam consequuntur qui
+                                        adipisci. Quibusdam provident ipsam nobis laboriosam molestias hic labore magni
+                                        sunt.
+                                        Quas repellat temporibus cum officia, quaerat repudiandae dolorum rem accusamus
+                                        doloribus voluptatem, perspiciatis deleniti ab doloremque alias delectus porro
+                                        incidunt consequatur fugiat, vitae aliquid totam quam enim molestias.
+                                        Consequatur, accusantium.
+                                        Dolor natus tempore maiores, eum magni ratione nulla eius? Odio adipisci
+                                        eveniet fugiat eius perferendis maxime, praesentium nesciunt. Natus architecto
+                                        doloremque in quis reiciendis, blanditiis quae provident voluptatibus possimus
+                                        sit.
+                                        Minus adipisci corrupti voluptate rem, unde ratione cupiditate? Ducimus animi
+                                        eligendi libero, consequatur nisi ratione minima ipsam rem est repudiandae
+                                        aliquid ut, placeat blanditiis! Debitis neque nesciunt in molestias ex?
+                                        Vel rerum nobis dolor impedit cupiditate maiores. Natus, autem reprehenderit
+                                        commodi recusandae id pariatur reiciendis eligendi doloribus quibusdam ipsa hic
+                                        vitae voluptatum provident nisi aliquid consequuntur, numquam quo, consectetur
+                                        maiores.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#!" class="modal-close btn teal darken-1 waves-effect waves-light hoverable capitalize">Agree</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col hide-on-small-only m2"></div>
+                </div>
+            </div>
+    </main>
+
+    <footer class="teal darken-1 white-text">
+        <div class="row margin0">
+            <div class="container">
+                <div class="col s12">
+                    <p class="center-align margin0">&copy; 2019 - All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
